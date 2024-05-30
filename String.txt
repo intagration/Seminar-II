@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Functions</title>
+</head>
+<body>
+    <h2>JavaScript Functions</h2>
+
+    <script>
+        // Function to calculate the length of a string
+        function stringLength(str) {
+            return str.length;
+        }
+
+        // Function to reverse the digits of a number
+        function reverseNumber(num) {
+            const reversedNum = parseFloat(num.toString().split('').reverse().join(''));
+            return reversedNum;
+        }
+
+        // Example usage
+        const str = "Mayur, Pawar!!";
+        const num = 7249892005;
+
+        document.write("<p>String: '" + str + "'</p>");
+        document.write("<p>Length of the string: " + stringLength(str) + "</p>");
+
+        document.write("<p>Number: " + num + "</p>");
+        document.write("<p>Reversed number: " + reverseNumber(num) + "</p>");
+    </script>
+</body>
+</html>

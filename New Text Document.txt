@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup...</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body >
+    <div class="container">
+        <h1>Sign Up...</h1>
+        <form action="submit.php" method="post"> <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" name="firstName" placeholder="firstName" id="firstName" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" name="lastName" placeholder="lastName" id="lastName" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="Email Id" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" name="username" placeholder="Username" id="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" name="password" placeholder="Password" id="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" name="confirmPassword" placeholder="Confirm Password" id="confirmPassword" required>
+            </div>
+            <div class="form-group">
+                <label for="mobileNumber">Mobile Number:</label>
+                <input type="tel" name="mobileNumber" placeholder="MobileNumber" id="mobileNumber" required>
+            </div>
+            
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding:0 ;
+    background-image: url(FORT.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    
+.container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: rgb(247, 245, 244);
+
+
+} 
+  
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+    width: 95%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}

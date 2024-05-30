@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department  Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightgreen;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color:skyblue;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Department Form</h1>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="PRN">PRN:</label>
+            <input type="text" id="PRN" name="PRN" required>
+            
+            <label for="Branch">Branch:</label>
+            <input  type="text" id="Branch" name="Branch"  required>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="year">YEAR:</label>
+            <input  type="text" id="Year" name="Year"  required>
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <h2>Department <form action=""></form></h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>PRN </th>
+                <th>Branch</th>
+                <th>Email id</th>
+                <th>Year</th>
+
+            </tr>
+            <tr>
+                <td>Prasad Kolte</td>
+                <td>2264191242xxx</td>
+                <td>CSE</td>
+                <td>prasad@gmail.com</td>
+                <td>2nd </td>
+            </tr>
+            <tr>
+                <td>Sagar Zujam</td>
+                <td>2264191242xxx</td>
+                <td>CSE</td>
+                <td>sagar@gmail.com</td>
+                <td>2nd </td>
+            </tr>
+            <tr>
+                <td>Shreya Raghoji</td>
+                <td>2264191242xxx</td>
+                <td>CSE</td>
+                <td>shreya@gmail.com</td>
+                <td>2nd </td>
+            </tr>
+            <tr>
+                <td>Samarth Thakka</td>
+                <td>226419578xxx</td>
+                <td>Mech</td>
+                <td>samarth@gmail.com</td>
+                <td>2nd </td>
+            </tr>
+        </table>
+
+    </div>
+</body>
+</html>

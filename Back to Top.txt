@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+    <style>
+        body {
+            background-color: #f0f0f0; /* Change background color */
+            font-family: Arial, sans-serif; /* Use Arial font */
+            color: #333; /* Set text color */
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            text-align: center;
+        }
+        p {
+            text-align: justify;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+        a {
+            text-decoration: none;
+            color: #007bff; /* Set link color */
+        }
+        a:hover {
+            text-decoration: underline; /* Underline link on hover */
+        }
+        .top-link {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to NCER</h1>
+        <p> My name is Mayur Pawar ,pursing a B.Tech in Computer Science And Engineering in 2nd Year </p>
+        
+        <p>This is a <em>understand</em> book of the  <u>DSA in C++ </u> </p>
+        
+        <p>I am studying <strong>Full Stack Development</strong>  <span style="font-family: 'Courier New', Courier, monospace;">to create attractive websites.</span> </p>
+        <p> . </p>
+        <p> . </p>
+        <p> . </p>
+        <p> . </p>
+        <p> . </p>
+        <p> . </p>
+        <p> . </p>
+        <p> . </p>
+        <p> . </p>
+        <p> . </p>
+        <p> . </p>
+        <p> . </p>
+        <p> . </p>
+
+
+
+
+        <p> . </p>
+        <p> . </p>
+        <p> . </p>
+        <p> . </p>
+        <p> . </p>
+        <p> . </p>
+        <p> . </p>
+        <p> . </p>
+        <p> . </p>
+        <p> . </p>
+        
+        <div class="top-link">
+            <a href="#top">Back to Top</a>
+        </div>
+    </div>
+</body>
+</html>
