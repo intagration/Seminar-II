@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide Paragraph Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <button id="toggleButton">Hide Paragraph</button>
+        <p id="paragraph">This is a simple paragraph that can be hidden or shown using the button above.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+CSS :
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #0056b3;
+}
+p {
+    margin-top: 20px;
+     color: #333;
+}
+document.getElementById('toggleButton').addEventListener('click', function() {
+    var paragraph = document.getElementById('paragraph');
+    if (paragraph.style.display === 'none') {
+        paragraph.style.display = 'block';
+        this.textContent = 'Hide Paragraph';
+    } else {
+        paragraph.style.display = 'none';
+        this.textContent = 'Show Paragraph';
+    }
+});
