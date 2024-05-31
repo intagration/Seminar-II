@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number Finder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #989595;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #28a745;
+            color: #fff;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        #result {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Find Prime Numbers</h2>
+        <label for="start">Starting Number:</label>
+        <input type="number" id="start" placeholder="Enter starting number">
+        <label for="end">Ending Number:</label>
+        <input type="number" id="end" placeholder="Enter ending number">
+        <button onclick="findPrimes()">Find Primes</button>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function isPrime(num) {
+            if (num <= 1) return false;
+            if (num <= 3) return true;
+
+            if (num % 2 === 0 || num % 3 === 0) return false;
+
+            for (let i = 5; i * i <= num; i += 6) {
+                if (num % i === 0 || num % (i + 2) === 0) return false;
+            }
+            return true;
+        }
+
+        function findPrimes() {
+            const start = parseInt(document.getElementById('start').value);
+            const end = parseInt(document.getElementById('end').value);
+            const resultDiv = document.getElementById('result');
+
+            if (isNaN(start) || isNaN(end) || start > end) {
+                resultDiv.innerHTML = '<p>Please enter valid numbers with start less than or equal to end.</p>';
+                return;
+            }
+
+            let primes = [];
+            for (let i = start; i <= end; i++) {
+                if (isPrime(i)) {
+                    primes.push(i);
+                }
+            }
+
+            if (primes.length === 0) {
+                resultDiv.innerHTML = '<p>No prime numbers found in the given range.</p>';
+            } else {
+                resultDiv.innerHTML = '<p>Prime numbers between ' + start + ' and ' + end + ':</p><p>' + primes.join(', ') + '</p>';
+            }
+        }
+    </script>
+</body>
+</html>
+
+
